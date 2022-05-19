@@ -1,0 +1,108 @@
+body {
+	background-color: #ffffff;
+}
+
+.login {
+  #login {
+    width: 100%;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    @media screen and (max-width: 768px) {
+      //padding-top:8%;
+      display: flex;
+      flex-flow: column;
+    }
+
+    h1 {
+      width: 40%;
+      float: left;
+      padding: 17% 0 0;
+      height: 100%;
+      //background-color: #9bd6ff;//#02416d;
+      box-sizing: border-box;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        //margin-top: 20px;
+        height: auto;
+        padding: 5% 0 2%;
+      }
+
+      a {
+        background-repeat: no-repeat;
+        padding-bottom: 100px;
+        //background-size: 300px;
+        background-size: contain;
+        width: 300px;
+        @media screen and (max-width: 768px) {
+          padding-bottom: 50px;
+          background-size: 200px;
+          width: 200px;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    #login_error {
+      position: absolute;
+      //top: 0;
+      width: calc(100% - 28px);
+	  margin-top: 1em;
+      text-align: center;
+      //margin-bottom: 20px;
+      z-index: 1;
+      font-size: 1.1em;
+      color: #d63638;
+      font-weight: 500;
+      background: #f6e8e8;
+      @media screen and (max-width: 768px) {
+        position: relative !important;
+        margin-top: 0 !important;
+      }
+    }
+
+    #loginform {
+      width: 60%;
+      max-width: calc(500px + 30%);
+      box-sizing: border-box;
+      padding: 17% 15%;
+      height: 95%;
+      border: none;
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+      margin: 0 auto;
+
+      input, .wp-pwd, p.submit {
+        max-width: 400px;
+      }
+
+      input[type=text], input[type=password] {
+        border-radius: 0;
+        padding: 0.5rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 80%;
+        margin: 0 auto;
+        padding: 10% 0;
+        height: auto;
+        max-width: 400px;
+      }
+    }
+
+    #nav {
+      //clear: both;
+      height: 5%;
+      box-sizing: border-box;
+      margin: 0;
+      text-align: center;
+
+      a {
+        color: #02416d;
+      }
+    }
+
+    p#backtoblog {
+      display: none;
+    }
+  }
+}
